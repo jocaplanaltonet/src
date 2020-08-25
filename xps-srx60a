@@ -1,0 +1,91 @@
+[[inputs.snmp]]
+  agents = [ "host:161" ]
+  version = 2
+  name = "xps-srx60a"	
+  community = "admin"
+  interval = "60s"
+  timeout = "10s"
+  retries = 3
+
+  [[inputs.snmp.field]]
+    name = "Identidade"
+    oid = "1.3.6.1.4.1.34252.5.2.1.0"
+
+  [[inputs.snmp.field]]
+    name = "Corrente UR 1"
+    oid = "1.3.6.1.4.1.34252.5.1.1.1.1.0"
+
+  [[inputs.snmp.field]]
+    name = "Corrente UR 2"
+    oid = "1.3.6.1.4.1.34252.5.1.1.1.2.0"
+
+  [[inputs.snmp.field]]
+    name = "Falha UR 1"
+    oid = "1.3.6.1.4.1.34252.5.1.1.2.1.0"
+
+  [[inputs.snmp.field]]
+    name = "Falha UR 2"
+    oid = "1.3.6.1.4.1.34252.5.1.1.2.2.0"
+
+  [[inputs.snmp.field]]
+    name = "VCA UR 1"
+    oid = "1.3.6.1.4.1.34252.5.1.2.0"
+
+
+  [[inputs.snmp.field]]
+    name = "VCA UR 2"
+    oid = "1.3.6.1.4.1.34252.5.1.3.0"
+
+  [[inputs.snmp.field]]
+    name = "CaBaixa"
+    oid = "1.3.6.1.4.1.34252.5.2.7.0"
+
+
+  [[inputs.snmp.field]]
+    name = "CaAlta"
+    oid = "1.3.6.1.4.1.34252.5.2.8.0"
+
+
+  [[inputs.snmp.field]]
+    name = "Sistema VCC"
+    oid = "1.3.6.1.4.1.34252.5.1.5.0"
+
+  [[inputs.snmp.field]]
+    name = "Sistema Ah"
+    oid = "1.3.6.1.4.1.34252.5.1.7.0"
+
+  [[inputs.snmp.field]]
+    name = "TempAmb1"
+    oid = "1.3.6.1.4.1.34252.5.1.15.6.0"
+
+  [[inputs.snmp.field]]
+    name = "FusCons"
+    oid = "1.3.6.1.4.1.34252.5.1.12.0"
+
+  [[inputs.snmp.field]]
+    name = "FusBat"
+    oid = "1.3.6.1.4.1.34252.5.1.13.0"
+
+  [[inputs.snmp.field]]
+    name = "IBatC"
+    oid = "1.3.6.1.4.1.34252.5.1.8.0"
+
+  [[inputs.snmp.field]]
+    name = "IBatD"
+    oid = "1.3.6.1.4.1.34252.5.1.9.0"
+
+  [[inputs.snmp.field]]
+    name = "VBat"
+    oid = "1.3.6.1.4.1.34252.5.1.6.0"
+
+  [[inputs.snmp.field]]
+    name = "AlarmeUrg"
+    oid = "1.3.6.1.4.1.34252.5.1.14.1.0"
+
+  [[inputs.snmp.field]]
+    name = "AlarmeNaoUrg"
+    oid = "1.3.6.1.4.1.34252.5.1.14.2.0"
+
+  [[inputs.snmp.field]]
+    name = "AlarmeAdivertencia"
+    oid = "1.3.6.1.4.1.34252.5.1.14.3.0"
